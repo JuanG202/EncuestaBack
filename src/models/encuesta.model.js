@@ -9,6 +9,10 @@ const encuestaSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  sede: {
+    type: String,
+    required: true,
+  },
   experience: {
     type: String,
     required: true,

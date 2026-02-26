@@ -2,9 +2,9 @@ const Encuesta = require("../models/Encuesta.model");
 
 const crearEncuesta = async (req, res) => {
   try {
-    const { cedula, eps, experience, recommend } = req.body;
+    const { cedula, eps, sede, experience, recommend } = req.body;
 
-    if (!cedula || !eps || !experience || !recommend) {
+    if (!cedula || !eps ||  !sede || !experience || !recommend) {
       return res.status(400).json({ 
         message: "Todos los campos son obligatorios" 
       });
@@ -13,6 +13,7 @@ const crearEncuesta = async (req, res) => {
     const nuevaEncuesta = new Encuesta({
       cedula,
       eps,
+      sede,
       experience,
       recommend,
     });
