@@ -1,4 +1,4 @@
-const Encuesta = require("../models/Encuesta.model");
+const Encuesta = require("../models/encuesta.model");
 
 const crearEncuesta = async (req, res) => {
   try {
