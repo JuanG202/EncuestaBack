@@ -21,6 +21,14 @@ const encuestaSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  staffName: {
+    type: String,
+    required: true,
+  },
+  serviceArea: {
+    type: String,
+    required: true,
+  },
 }, { timestamps: true });
 
 module.exports = mongoose.model("Encuesta", encuestaSchema);
